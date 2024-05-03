@@ -3,7 +3,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 		
-	<groupId>com.github.joffryferrater</groupId>
+	<groupId>com.github.shreejejurkar</groupId>
 	<artifactId>tap-and-eat-microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>

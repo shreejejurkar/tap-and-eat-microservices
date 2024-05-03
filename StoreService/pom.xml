@@ -10,7 +10,7 @@
 	<description>Provides api for Stores</description>
 
     <parent>
-        <groupId>com.github.joffryferrater</groupId>
+        <groupId>com.github.shreejejurkar</groupId>
         <artifactId>tap-and-eat-microservices</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -20,7 +20,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
