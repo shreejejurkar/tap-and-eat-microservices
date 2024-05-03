@@ -22,7 +22,7 @@
 	</properties>
 
     <properties>
-    <docker.image.prefix>shreejejurkar/</docker.image.prefix>
+        <docker.image.prefix>shreejejurkar/</docker.image.prefix>
     </properties>
 
 	<dependencies>
