@@ -3,26 +3,26 @@ version: '3.8'
 
 services:
   configserver:
-    image: shreejejurkar/ConfigService
+    image: shreejejurkar/configservice
     ports:
     - "8888:8888"
 
   accounts:
-    image: shreejejurkar/AccountService
+    image: shreejejurkar/accountservice
     links:
     - configserver
     
   prices:
-    image: shreejejurkar/PriceService
+    image: shreejejurkar/priceservice
     links:
     - configserver
 
   customers:
-    image: shreejejurkar/CustomerService
+    image: shreejejurkar/customerservice
     links:
     - configserver
 
   stores:
-    image: shreejejurkar/StoreService
+    image: shreejejurkar/storeservice
     links:
     - configserver
