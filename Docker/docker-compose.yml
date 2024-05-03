@@ -1,25 +1,28 @@
 #Docker compose file
-configserver:
-  image: shreejejurkar/ConfigService
-  ports:
-   - "8888:8888"
+version: '3.8'
 
-accounts:
-  image: shreejejurkar/AccountService
-  links:
-   - configserver
-   
-prices:
-  image: shreejejurkar/PriceService
-  links:
-   - configserver
+services:
+  configserver:
+    image: shreejejurkar/ConfigService
+    ports:
+    - "8888:8888"
 
-customers:
-  image: shreejejurkar/CustomerService
-  links:
-   - configserver
+  accounts:
+    image: shreejejurkar/AccountService
+    links:
+    - configserver
+    
+  prices:
+    image: shreejejurkar/PriceService
+    links:
+    - configserver
 
-stores:
-  image: shreejejurkar/StoreService
-  links:
-   - configserver
+  customers:
+    image: shreejejurkar/CustomerService
+    links:
+    - configserver
+
+  stores:
+    image: shreejejurkar/StoreService
+    links:
+    - configserver
