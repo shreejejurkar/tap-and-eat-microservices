@@ -21,6 +21,10 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+    <properties>
+    <docker.image.prefix>shreejejurkar/</docker.image.prefix>
+    </properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
